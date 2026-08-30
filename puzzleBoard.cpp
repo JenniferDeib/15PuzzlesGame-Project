@@ -49,6 +49,7 @@ bool puzzleBoard::moveUp(int arr[][4], int rows, int cols, int spaceRow, int spa
         swap(arr[spaceRow][spaceCol], arr[spaceRow - 1][spaceCol]);//that row will only be affected by the move up hence the changes will only be made to the rows.
         return true;//if the rows is greater that zero and has space to move up it is valid
     }
+    return false;
 }
 
 bool puzzleBoard::moveDown(int arr[][4], int rows, int cols, int spaceRow, int spaceCol)//user-defined function that will allow move down motion.
